@@ -72,6 +72,7 @@ type UserProfileUpdate2 = {
 }
 
 // #2
+// [ in ] -> 배열인데 in 으로 나열한 값들이 넘겨진 배열이 됨
 type UserProfileUpdate3 = {
     [p in 'username' | 'email' | 'profilePhotoUrl']?: UserProfile[p]
 }
