@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-check == tsconfig.json (checkJs)
 
 // utils
 function $(selector) {
