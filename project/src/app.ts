@@ -1,10 +1,9 @@
 // @ts-check == tsconfig.json (checkJs)
 
-
 enum CovidStatus {
   Confirmed = 'confirmed',
   Recovered = 'recovered',
-  Deaths = 'deaths'
+  Deaths = 'deaths',
 }
 
 // utils
