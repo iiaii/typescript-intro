@@ -8,7 +8,8 @@
     "outDir": "./built",
     "moduleResolution": "Node",
     "lib": ["ES2015", "DOM", "DOM.Iterable"], // async await 문법 사용
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "typeRoots": ["./node_modules/@types", "types"] // @types 가 없을때 직접 만들어서 사용
   },
   "include": ["./src/**/*"],
   "exclude": [
