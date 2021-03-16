@@ -6,7 +6,9 @@
     "target": "es5",
     "sourceMap": true,
     "outDir": "./built",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"], // async await 문법 사용
+    "noImplicitAny": true
   },
   "include": ["./src/**/*"],
   "exclude": [

@@ -66,22 +66,10 @@ function createSpinnerElement(id) {
 // state
 var isDeathLoading = false;
 var isRecoveredLoading = false;
-/**
- * @typedef {object} CovidSummary
- * @property {Array<Object>} Country
- */
-// api
-/**
- *
- * @returns {Promise<CovidSummary>}
- */
 function fetchCovidSummary() {
     var url = 'https://api.covid19api.com/summary';
     return axios.get(url);
 }
-fetchCovidSummary().then(function (res) {
-    console.log(res.Country);
-});
 function fetchCountryInfo(countryCode, status) {
     // params: confirmed, recovered, deaths
     var url = "https://api.covid19api.com/country/" + countryCode + "/status/" + status;
