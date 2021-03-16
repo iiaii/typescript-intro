@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/chart.js": "^2.9.31",
     "axios": "^0.21.1",
     "chart.js": "^2.9.4"
   },
